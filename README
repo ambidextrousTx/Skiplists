@@ -1,0 +1,16 @@
+Skip lists are a simple randomized structure, which facilitate
+the operations search, insert and delete. Skip lists are implemented
+as a hierarchy of linked lists, kind of like a subway system with
+express stops [top level] as well as normal stops [bottom level]. The 
+bottom level has all the stops, while the express level has a 
+few stops. The search is done by navigating through the express level
+first, then descending to the bottom level and making the required 
+moves. For a log_2(n) level skip list structure, the search time
+is O(log_2 n). In fact, a skip list looks like a level-linked B+ tree.
+
+For more information, refer to:
+http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/readings/l12_skiplists.pdf 
+
+Implemented in C.
+Signed ~ AmbidextrousTx
+Nov 2010
